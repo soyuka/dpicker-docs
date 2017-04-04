@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="http://localhost:5000/demo/styles/default.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+  <title>My Awesome Cycle.js app</title>
+  <style>
+    #heading {
+      height: 100px;
+      margin: 50px 0;
+      text-align: center;
+      line-height: 300px;
+    }
+
+    #heading img, #heading h1 {
+      display: inline-block;
+      vertical-align: top;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="container-fluid" id="heading">
+      <div class="row">
+        <img width="100px" src="https://camo.githubusercontent.com/11de4cf6784a63b509381736e9382a70941163b8/68747470733a2f2f63646e2e7261776769742e636f6d2f736f79756b612f647069636b65722f6d61737465722f6c6f676f2e737667">
+        <h1>DPicker</h1>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <label id="dpicker"></label>
+        </div>
+      </div>
+    </div>
+    <div id="app" class="container-fluid"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <script src="http://localhost:5000/dist/dpicker.js"></script>
+  <script src="http://localhost:5000/dist/dpicker.time.js"></script>
+  <script src="http://localhost:5000/dist/dpicker.modifiers.js"></script>
+  <script src="http://localhost:5000/dist/dpicker.arrow-navigation.js"></script>
+  <script src="bundle.js"></script>
+</body>
+</html>
